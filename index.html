@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Data Binding Vue JS</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+	</head>
+	<body>
+		<div id="app">
+			<h1>{{ ujumbe }}</h1>
+
+			<input v-model="ujumbe" />
+		</div>
+
+		
+		<!-- Vue JavaScript -->
+		<script src="js/vue.min.js"></script>
+
+		<script>
+			var data = {
+				ujumbe: "Hello World"
+			}
+
+			new Vue({
+				el:'#app',
+				data:data
+			});
+		</script>
+	</body>
+</html>
